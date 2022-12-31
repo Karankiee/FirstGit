@@ -2,6 +2,6 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/FirstGitProject/v16
-/.vs/slnx.sqlite
-/.vs/VSWorkspaceState.json
+/.vs
+/.bin
+/.obj
