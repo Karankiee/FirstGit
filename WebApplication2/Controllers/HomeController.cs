@@ -23,6 +23,18 @@ namespace WebApplication2.Controllers
             return View();
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Index(MemberModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                return View("Result", model);
+            }
+
+            return View(model);
+        }
+
         public IActionResult Privacy()
         {
             return View();
